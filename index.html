@@ -18,55 +18,22 @@ body {
 }
 
 .reveal h2 {
-font-weight: bold;
-color:#000;
-display: block;
-clear: both;
-border-bottom: 0px;
-font-size: 135px;
+	font-weight: bold;
+	color:#000;
+	display: block;
+	clear: both;
+	border-bottom: 0px;
+	font-size: 135px;
 }
 
 .reveal h1 {
   line-height: 1em;
   font-size: 7em;
   font-weight: bold;
-display: block;
-clear: both;
-border-bottom: 0px;
-
-
+	display: block;
+	clear: both;
+	border-bottom: 0px;
 }
-
-.reveal h1.extra {
-  font-size: 300px
-}
-
-.reveal h1.extra.orange {
-  color:#940000;
-}
-
-.reveal .main-section h2 {
-  color:#000;
-}
-
-.reveal .main-section h3 {
-  color:#fff;
-  font-size: 55px
-}
-
-.reveal .slides>section.header-section {
-      background: #000;
-}
-
-.reveal .header-section h2 {
-  color:#fff;
-}
-
-.reveal .header-section h3 {
-  color:#cb8435;
-  font-size: 55px
-}
-
 
 .reveal h3 {
   font-weight: 300;
@@ -76,15 +43,18 @@ border-bottom: 0px;
   margin-bottom: 20px
 }
 
-
 .reveal p {
   color:#000;
-  font-size: 34px;
+  font-size: 1.7em;
   font-weight: normal;
   text-shadow: 0px 0px 6px rgba(0,0,0,0.2);
-  width: 80%;
   margin:auto;
   line-height: 1.6em
+}
+
+.reveal section {
+  padding-top: 9%;
+  background: #849ba5;
 }
 
 .reveal section > a {
@@ -93,48 +63,23 @@ border-bottom: 0px;
 }
 
 .reveal section img {
--webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0);
--moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0);
-box-shadow: 0 0 10px rgba(0, 0, 0, 0);
-max-width: 100%;
+	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+	-moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+	max-width: 100%;
 }
 
-.reveal .slides>section {
-  color:#cecece;
-  padding-top: 9%;
-  background: #6d92a2;
-  }
-
-.reveal .slides>section.protip {
-  background: #fff
+.reveal .main-section h2 {
+  color:#fff;
 }
 
-.reveal .sliders>section.topic {
-  background: rgb(187, 107, 0);
+.reveal .main-section h3 {
+  color:#fff;
+  font-size: 55px
 }
 
-.background {
-background: #fff;
-position: absolute;
-width: 100%;
-height: 100%;
-
-}
-
-.reveal h1.invisible{
-  color: #6d92a2;
-  text-shadow: 0px 0px 30px rgba(0,0,0,.3);
-}
-.reveal h5 span {
-  font-size: 25px;
-  text-transform: uppercase;
-  color:#cb8435;
-  clear: both;
-  display: inline-block;
-}
-.double img {
-  float: left;
-  margin-right: 30px
+.reveal .main-section {
+	background: #e8c460
 }
 
 .reveal h4 {
@@ -142,25 +87,6 @@ height: 100%;
   font-weight: normal;
   padding:0px 40px;
   line-height: 1.4em
-}
-
-.reveal h4 span {
-  font-size: 25px;
-  text-transform: uppercase;
-  color:#fff;
-  clear: both;
-  display: inline-block;
-}
-
-section div.double-wide {
-    float: left;
-    width: 50%;
-    text-align: left;
-    padding-top: 40px
-}
-
-section div.double-wide img{
-  float: right;
 }
 
 .reveal .slides>section.intro-page {
@@ -172,6 +98,11 @@ section div.double-wide img{
   margin-top: 120px;
 }
 
+.reveal p.quote {
+	font-style: italic;
+	font-size: 
+}
+
 
 </style>
   </head>
@@ -179,11 +110,9 @@ section div.double-wide img{
 
   <body>
     <div class="reveal">
-      <div class="background"></div>
       <div class="slides">
 
         <section class="intro-page">
-
           <h1>Visualizing</h1>
           <h3>Data</h3>
         </section>
@@ -191,6 +120,7 @@ section div.double-wide img{
        
         <section>
           <h3></h3>
+          <img src="imgs/">
         </section>
 
         <section>
@@ -205,12 +135,92 @@ section div.double-wide img{
 
 
        <section class="main-section">
-          <h2>TK</h2>
-          <h3>TK TK  </h3>
+         <h2>Lines</h2>
+         <div>
+	         	<p>Classic form</p>
+						<p>Show trends</p>
+						<p>Good for comparing over time </p>
+						<p>Continuous data</p>
+				 </div>
+       </section>
+
+
+       <section class="main-section">
+         <h2>Bars</h2>
+         <div>
+	         	<p>Classic form</p>
+	         	<p>Precise comparisons</p>
+	         	<p>Distinct data</p>
+				 </div>
+       </section>
+
+       
+
+       <section>
+         <p class="quote">There’s a strand of the data viz world that argues that everything could be a bar chart. That’s possibly true but also possibly a world without joy.</p>
+         <p>- Amanda Cox</p>
+        </section>
+
+       <section class="main-section">
+         <h2>Bubbles & Pies</h2>
+         <div>
+	         	<p>Parts of a Whole</p>
+	         	<p>Use sparingly</p>
+				 </div>
+       </section>
+
+
+       <section>
+          <h3></h3>
           <img src="imgs/">
+          <p>https://www.youtube.com/watch?v=jbkSRLYSojo</p>
         </section>
 
        
+
+       <section class="main-section">
+         <h2>Waffle</h2>
+         <div>
+	         	<p>Parts of a whole</p>
+	         	<p>Showing composition</p>
+				 </div>
+       </section>
+
+        
+
+        <section class="main-section">
+         <h2>Scatterplot</h2>
+         <div>
+	         	<p>Showing relationships</p>
+	         	<p>Individual data points</p>
+				 </div>
+       </section>
+
+
+       <section class="main-section">
+         <h2>Small Multiples</h2>
+         <div>
+	         	<p>Repetition</p>
+	         	<p>Compare small changes</p>
+				 </div>
+       </section>
+
+
+       <section class="main-section">
+         <h2>Maps</h2>
+         <div>
+	         	<p>Geographic information </p>
+       			<p>Place & Location is important </p>
+       			<p>Compare countries/states/cities</p>
+				 </div>
+       </section>
+      
+
+       <section class="main-section">
+         <h2>Name That Chart Form!</h2>
+         
+       </section>
+
 
 
 
