@@ -54,8 +54,7 @@ padding-top: 20px;
 }
 
 .reveal img {
-  max-width: 900px;
-  max-height: 500px;
+  max-height: 80%;
 }
 
 .reveal .quote.quad img {
