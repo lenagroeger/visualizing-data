@@ -14,38 +14,32 @@
 body {
   font-family: 'Roboto Slab', serif;
   font-weight: 100;
-  font-size: 26px
+  font-size: 26px;
 }
+
 
 .reveal h2 {
 	font-weight: bold;
-	color:#000;
+	color:#fff;
 	display: block;
 	clear: both;
 	border-bottom: 0px;
-	font-size: 135px;
+	font-size: 100px;
 }
 
 .reveal h1 {
   line-height: 1em;
-  font-size: 7em;
+  font-size: 10vw;
   font-weight: bold;
 	display: block;
 	clear: both;
 	border-bottom: 0px;
 }
 
-.reveal h3 {
-  font-weight: 300;
-  display: block;
-  font-size: 4em;
-  font-weight: 800;
-  margin-bottom: 20px
-}
 
 .reveal p {
   color:#000;
-  font-size: 1.7em;
+  font-size: 1.5em;
   font-weight: normal;
   text-shadow: 0px 0px 6px rgba(0,0,0,0.2);
   margin:auto;
@@ -53,54 +47,38 @@ body {
   margin-bottom: 20px
 }
 
+.reveal p.white {
+  color:#fff;
+}
+
 .reveal section {
-  padding-top: 5%;
+  padding-top: 6%;
   background: #849ba5;
 }
 
+.reveal section div p, .reveal section div h2{
+  text-align: left;
+}
 
 .reveal section img {
 	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0);
 	-moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0);
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0);
-	max-width: 90%;
-}
-
-.reveal .main-section h2, .reveal .main-section h3 {
-  color:#fff;
-}
-
-.reveal .main-section p {
-	margin-bottom: 0px
+	max-width: 70%;
+  max-height: 70%
 }
 
 .reveal .main-section {
 	background: #e8c460;
-	padding-top: 10%
 }
 
-.reveal h4 {
-  color:#000;
-  font-weight: normal;
-  padding:0px 40px;
-  line-height: 1.4em
-}
-
-.reveal .slides>section.intro-page {
-  background: url("imgs/nyc_subway_map_light.jpg") no-repeat top left;
+.reveal .intro-page {
+  background: url("imgs/nyc_subway_map_blue.jpg") no-repeat top left;
   background-size: 100%;
+  background-color: #849ba5;
 }
 
-.intro-page h1 {
-  margin-top: 120px;
-}
 
-.reveal p.quote {
-	font-style: italic;
-	background: #fff;
-	border-radius: 10px;
-	padding:20px 20px 20px 30px;
-}
 
 
 </style>
@@ -112,306 +90,289 @@ body {
       <div class="slides">
 
         <section class="intro-page">
-          <h1>Visualizing</h1>
-          <h3>Data</h3>
+          <h1>Show Me<br> Your Data</h1>
+          <p class="white">An intro to charts and data visualization</p>
+          <p><a href="https://twitter.com/lenagroeger" target="_blank" >@lenagroeger</a></p>
         </section>
 
-       
         <section>
+          <div>
+          <h2>The Plan:</h2>
+          
+            <p>How do I best show my data? </p>
+            <p>How to spot different chart types in the wild</p>
+            <p>How to make them!</p>
+          </div>
+          
+        </section>
+
+        <section>
+        <p>Same data, different encoding</p>
+        <img src="imgs/scales.jpg">
+        <p class="source"><a href="http://www.getnerdyhr.com/1984-was-awesome-why-bar-charts-are-so-effective/" target="_blank">Paul Reiman</a></p>
+        </section>
+       
+       <section>
+          <p>How important is accuracy?</p>
+          <img src="imgs/judgement.jpg">
+          <p class="source"><a href="https://www.gabrielaplucinska.com/blog/2017/8/7/pie-charts" target="_blank">Gabriela Plucinska, based on a 1984 Cleveland & McGill study</a></p>
+        </section>
+
+        <section>
+          <p>What are you trying to show?</p>
           <img src="imgs/chartofcharts.jpg">
         </section>
 
-        <section>
-          <img src="imgs/chartofcharts_highlight.jpg">
-        </section>
-
-        <section>
-          <img src="imgs/Cleveland-and-McGill.jpg">
-        </section>
 
        <section>
-          <img src="imgs/scales.jpg">
-        </section>
-
-       <section class="main-section">
-         <h2>Bars</h2>
-         <div>
-	         	<p>Classic form</p>
-	         	<p>Precise comparisons</p>
-	         	<p>Distinct data</p>
-				 </div>
-       </section>
-
-       <section>
-          <img src="imgs/bar.png">
-        </section>
-
-
-       <section>
-          <img src="imgs/espn.jpg">
-        </section>
-       
-        <section>
-          <img src="imgs/tylenol.png">
-        </section>
-
- 				<section>
-          <img src="imgs/hispanics.png">
-        </section>
-
-        <section>
-         	<p class="quote">There’s a strand of the data viz world that argues that everything could be a bar chart. That’s possibly true but also possibly a world without joy.</p>
-         	<p>- Amanda Cox</p>
-        </section>
-
-
-       <section class="main-section">
-         <h2>Lines</h2>
-         <div>
-	         	<p>Classic form</p>
-						<p>Show trends</p>
-						<p>Good for comparing over time </p>
-						<p>Continuous data</p>
-				 </div>
-       </section>
-
-       <section>
-          <img src="imgs/stocks.png">
-        </section>
-
-        <section>
-          <a href="https://www.nytimes.com/interactive/2017/06/05/upshot/opioid-epidemic-drug-overdose-deaths-are-rising-faster-than-ever.html" target="_blank"><img src="imgs/drugdeaths.jpg"></a>
-        </section>
-
-        <section>
-          <img src="imgs/whale.jpg">
-        </section>
-
-        <section>
-          <a href="https://archive.nytimes.com/www.nytimes.com/interactive/2009/11/06/business/economy/unemployment-lines.html?_" target="_blank"><img src="imgs/joblessrate.png"></a>
-        </section>
-
-
-       <section>
-         <img src="imgs/stackedline.png">
+        <p>Encoding matters!</p>
+         <img src="imgs/line_bar.jpg">
+         <p class="source"><a href="https://policyviz.com/2020/06/07/the-employment-situation-summary/" target="_blank">PolicyViz</a></p>
        </section>
 
 
         <section>
-        	<h3>Bar vs Line</h3>
+          <p>Bar vs Line</p>
          <img src="imgs/bar_vs_line.jpg">
        </section>
 
+       <section class="main-section">
+        <div>
+         <h2>Bar Charts</h2>
+         
+	         	<p>Very accurate</p>
+	         	<p>Distinct/categorical data</p>
+            <p>Good for making comparisons</p>
+				 </div>
+       </section>
+
+      <section>
+        <p>The bread and butter of data viz</p>
+        <img src="imgs/bar.png">
+        <p class="source"><a href="https://www.pewsocialtrends.org/2019/01/17/generation-z-looks-a-lot-like-millennials-on-key-social-and-political-issues/" target="_blank">Pew Research Center</a></p>
+        
+      </section>
+
+
+      <section>
+        <p>But bar charts can be powerful too!</p>
+          <img src="imgs/nytimes_unemploymentclaims.png">
+
+          <p class="source"><a href="https://www.nytimes.com/interactive/2020/03/26/upshot/coronavirus-millions-unemployment-claims.html" target="_blank">New York Times</a></p>
+
+        </section>
+       
+        <section>
+          <p>Or appear in unexpected forms</p>
+          <img src="imgs/tylenol.png">
+          <p class="source"><a href="https://www.propublica.org/article/tylenol-mcneil-fda-use-only-as-directed" target="_blank">ProPublica</a></p>
+
+        </section>
+
 
        <section class="main-section">
-         <h2>Pie</h2>
-         <div>
-	         	<p>Parts of a whole</p>
+        <div>
+         <h2>Line Charts</h2>
+         
+						<p>Continuous data</p>
+            <p>Good for showing trends</p>
+				 </div>
+       </section>
+
+
+        
+       
+
+        <section>
+          <p>Line charts are good for showing data over time</p>
+          <img src="imgs/corona_compare.jpg">
+
+          <p class="source"><a href="https://www.nytimes.com/2020/07/06/briefing/how-badly-is-america-doing.html" target="_blank">New York Times</a></p>
+
+        </section>
+
+        <section>
+          <p>Whether that's telling one story...</p>
+          <img src="imgs/drugdeaths.jpg">
+
+          <p class="source"><a href="https://www.nytimes.com/interactive/2017/06/05/upshot/opioid-epidemic-drug-overdose-deaths-are-rising-faster-than-ever.html" target="_blank">New York Times</a></p>
+        </section>
+
+
+        <section>
+          <p>...or making comparisons</p>
+          <img src="imgs/unemployment.png">
+
+         <p class="source"><a href="https://projects.propublica.org/coronavirus-unemployment/" target="_blank">ProPublica</a></p>
+
+        </section>
+
+
+       <section>
+        <p>...or showing proportions</p>
+         <img src="imgs/stackedline.png">
+
+         <p class="source"><a href="https://www.pewresearch.org/hispanic/chart/immigrant-statistical-portrait-origins-of-the-u-s-immigrant-population/" target="_blank">Pew Research Center</a></p>
+
+       </section>
+
+       <section class="main-section">
+        <div>
+         <h2>Pie Charts</h2>
+         
+            <p>Good for showing parts of a whole</p>
 	         	<p>Use sparingly</p>
-	         	<p>Only use to compare 2 (max 3) things</p>
 				 </div>
        </section>
 
        <section>
+        <p>The best pie chart</p>
          <img src="imgs/pie.jpg">
        </section>
 
+
+
        <section>
+         <p>The worst pie chart</p>
          <img src="imgs/badpie.jpg">
        </section>
 
        <section>
+         <p>Ok, maybe this is the worst one</p>
          <img src="imgs/badpie2.png">
        </section>
 
        <section>
-         <a href="https://www.darkhorseanalytics.com/portfolio/2016/1/7/data-looks-better-naked-pie-charts" target="_blank"><img src="imgs/piechart.gif"></a>
-       </section>
+         <p>The more slices, the harder to read </p>
+         <img src="imgs/pies.png">
 
-       <section class="main-section">
-         <h2>Waffle</h2>
-         <div>
-	         	<p>Parts of a whole</p>
-	         	<p>Show composition</p>
-				 </div>
-       </section>
+         <p class="source"><a href="https://blog.usejournal.com/why-humans-love-pie-charts-9cd346000bdc" target="_blank">Walter Crosby Eells 1926 study, via Manuel Lima</a></p>
 
-       <section>
-         <img src="imgs/waffle.jpg">
        </section>
-
-       <section>
-         <img src="imgs/dollarsdrones.jpg">
-       </section>
-
-        <section class="main-section">
-         <h2>Scatterplot</h2>
-         <div>
-	         	<p>Showing relationships</p>
-	         	<p>Individual data points</p>
-				 </div>
-       </section>
-
-       <section>
-         <img src="imgs/admissions.png">
-       </section>
-
-       <section>
-         <a href="https://archive.nytimes.com/www.nytimes.com/interactive/2009/03/01/business/20090301_WageGap.html?8dpc" target="_blank"><img src="imgs/paycheck.jpg"></a>
-       </section>
-        
-       <section>
-         <a href="https://www.nytimes.com/interactive/2016/07/05/upshot/is-sushi-healthy-what-about-granola-where-americans-and-nutritionists-disagree.html" target="_blank"><img src="imgs/nutrition.jpg"></a>
-       </section>
-
        
 
-       <section>
-       	  <p>200 Countries, 200 Years, 4 Minutes</p>
-          <a href="https://www.youtube.com/watch?v=jbkSRLYSojo" target="_blank"><img src="imgs/rosling.png"></a>
-        </section>
-
-
-        
-
-       <section class="main-section">
-         <h2>Small Multiples</h2>
-         <div>
-	         	<p>Repetition</p>
-	         	<p>Compare small changes</p>
+        <section class="main-section">
+          <div>
+         <h2>Scatterplot</h2>
+         
+	         	<p>Good for showing relationships</p>
+	         	<p>Trickier to read</p>
 				 </div>
        </section>
 
        <section>
-         <img src="imgs/horse.png">
+         <p>Scatterplots can show a lot of data at once</p>
+         <img src="imgs/admissions.png">
+         <p class="source"><a href="https://archive.nytimes.com/www.nytimes.com/interactive/2013/05/07/education/college-admissions-gap.html?_r=0;" target="_blank">New York Times</a></p>
        </section>
 
        <section>
-         <img src="imgs/weather.png">
+         <p>They can show inequality    </p>
+         <img src="imgs/paycheck.jpg">
+         <p class="source"><a href="https://archive.nytimes.com/www.nytimes.com/interactive/2009/03/01/business/20090301_WageGap.html?8dpc" target="_blank">New York Times</a></p>
        </section>
-
-
-      <!--  <section>
-         <a href="https://archive.nytimes.com/www.nytimes.com/interactive/2012/07/20/us/drought-footprint.html?_r=0" target="_blank"><img src="imgs/drought.jpg"></a>
-       </section>
- -->
+        
        <section>
-         <a href="https://www.latimes.com/local/lanow/la-me-g-california-drought-map-htmlstory.html" target="_blank"><img src="imgs/caldrought.jpg"></a>
+         <p>They don't have to be boring! </p>
+         <img src="imgs/nutrition.jpg">
+         <p class="source"><a href="https://www.nytimes.com/interactive/2016/07/05/upshot/is-sushi-healthy-what-about-granola-where-americans-and-nutritionists-disagree.html" target="_blank">New York Times</a></p>
+       </section>
 
+  
+
+       <section class="main-section">
+        <div>
+         <h2>Maps</h2>
+         
+       			<p>Good for when geography is important</p>
+       			<p>Beware the population map!</p>
+				 </div>
+       </section>
+
+
+
+       <section>
+         <p>Choropleth map: typical election map</p>
+         <img src="imgs/election.png">
+         <p class="source"><a href="https://www.washingtonpost.com/2016-election-results/us-presidential-race/?itid=sf_2016-election-results-washington" target="_blank">Washington Post</a></p>
+       </section>
+
+      <section>
+         <p>Choropleth map with smaller geographies</p>
+         <img src="imgs/outbreak.png">
+         <p class="source"><a href="https://www.nytimes.com/interactive/2020/us/coronavirus-us-cases.html#map" target="_blank">New York Times</a></p>
+       </section>
+
+      
+       <section>
+         <p>Cartogram: when geography is less important</p>
+         <img src="imgs/state_opening.png">
+         <p class="source"><a href="https://www.nytimes.com/interactive/2020/us/states-reopen-map-coronavirus.html" target="_blank">New York Times</a></p>
        </section>
 
        <section>
-         <a href="https://www.npr.org/2015/04/01/396757476/the-neighborhood-wal-mart-a-blessing-or-a-curse" target="_blank"><img src="imgs/walmart.jpg"></a>
-       </section>
-
-       <section>
-         <a href="https://projects.propublica.org/graphics/lost-cause" target="_blank"><img src="imgs/lostcause.png"></a>
+         <p>Cartogram: quickly make comparisons</p>
+         <img src="imgs/state_corona.png">
+         <p class="source"><a href="https://graphics.reuters.com/HEALTH-CORONAVIRUS/USA-TRENDS/dgkvlgkrkpb/index.html" target="_blank">Reuters</a></p>
        </section>
 
         <section>
-         <a href="https://projects.propublica.org/graphics/civil-rights-violations" target="_blank"><img src="imgs/civilrights.jpg"></a>
-       </section>
-
-
-       <section class="main-section">
-         <h2>Maps</h2>
-         <div>
-	         	<p>Geographic information </p>
-       			<p>Place & Location is important </p>
-       			<p>Compare countries/states/cities</p>
-				 </div>
-       </section>
-
-
-
-       <section>
-         <img src="imgs/election.png">
+         <p>Symbol map: to show specific places</p>
+         <img src="imgs/cases_total.jpg">
+         <p class="source"><a href="https://www.washingtonpost.com/graphics/2020/national/coronavirus-us-cases-deaths/?itid=sf_coronavirus" target="_blank">Washington Post</a></p>
        </section>
 
        <section>
-         <img src="imgs/babyname.gif">
-       </section>
-
-       <section>
-         <img src="imgs/audit.png">
-       </section>
-
-      
-       <section>
+          <p>Did you just make a population map?</p>
          <img src="imgs/xkcd.png">
-       </section>
-
-
-
-       <section>
-         <img src="imgs/cartogram1.jpg">
+         <p class="source"><a href="https://xkcd.com/1138/" target="_blank">XKCD</a></p>
        </section>
 
        <section>
-         <img src="imgs/cartogram2.jpg">
+         <p>Totals vs. per capita </p>
+         <img src="imgs/cases.gif">
+         <p class="source"><a href="https://www.washingtonpost.com/graphics/2020/national/coronavirus-us-cases-deaths/?itid=sf_coronavirus" target="_blank">Washington Post</a></p>
        </section>
 
 
-       <section>
-         <a href="https://projects.propublica.org/bombs/" target="_blank"><img src="imgs/bombs.png"></a>
-       </section>
+      <section class="main-section">
+        <h2>Ok, how do I make some?</h2>
 
-       <section>
-         <img src="imgs/chicago.png">
-       </section>
+      </section>
 
-       <section>
-       		<p>Jeff's Nuke Map</p>
-          <a href="http://thejefflarson.s3.amazonaws.com/nuke-map/index.html" target="_blank"><img src="imgs/nuke.jpg"></a>
-          
-        </section>
-    
+      <section>
+        <h2>Datawrapper</h2>
+        <p>Free online tool for making charts and maps </p>
+        <a href="https://www.datawrapper.de/" target="_blank" ><img src="imgs/datawrapper.png"></a>
+      </section>
+
+      <section>
+        <p>They have tons of tutorials for all kinds of chart types </p>
+        <a href="https://academy.datawrapper.de/" target="_blank" ><img src="imgs/datawrapperacademy.png"></a>
+      </section>
+
+      <section>
+        <p>I made a few also: </p>
+        <a href="http://lenagroeger.com/datawrapper/" target="_blank" ><img src="imgs/tutorial.png"></a>
+      </section>
+
+      <section >
+        <h2>What next? </h2>
+        <a href="https://lenagroeger.com/resources/" target="_blank" ><img style="max-width: 500px" src="imgs/resources.png"></a>
+      </section>
+
+      <section >
+          <h2>Stay in touch! </h2>
+          <p><a href="https://propub.li/stayintouch">Fill out this form →</a></p>
+      </section>
 
 
-     	<section>
-         <a href="https://www.washingtonpost.com/graphics/2018/national/segregation-us-cities/?utm_term=.ba65226fa140"><img src="imgs/diversity.jpg"></a>
-       </section>
+      <section>
+          <h2>Thanks!</h2>       
+          <p><a href="https://twitter.com/lenagroeger" target="_blank" >@lenagroeger</a></p>
+
       
-
-       <section class="main-section">
-         <h2>Name That Chart Form!</h2>
-       </section>
-
-       <section>
-         <img src="imgs/guess-bar2.jpg">
-       </section>
-
-       
-
-       <section>
-        <a href="https://www.nytimes.com/interactive/2016/04/29/upshot/money-race-and-success-how-your-school-district-compares.html" target="_blank"> <img src="imgs/guess-scatter.jpg"></a>
-       </section>
-
- 
-       <section>
-         <img src="imgs/guess-cartogram.jpg">
-       </section>
-       
-
-       <section>
-         <img src="imgs/guess-map.jpg">
-       </section>
-
-       <section>
-         <img src="imgs/guess-smallmulti.jpg">
-       </section>
-
-
-       <section class="main-section">
-         <h2>Other Chart Forms</h2>
-         <div>
-	         	<p>There are so many...</p>
-				 </div>
-       </section>
-
-       <section>
-         <a href="https://archive.nytimes.com/www.nytimes.com/interactive/2010/02/26/sports/olympics/20100226-olysymphony.html?_r=1" target="_blank"><img src="imgs/musical.png"></a>
-       </section>
+     </section>
 
 
    </div>
